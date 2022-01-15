@@ -1,5 +1,5 @@
 import React from 'react'
-import {NavBtn,NavBtnLinkd,HomeText} from './home_page';
+import {NavBtn,NavBtnLinkd,HomeText,SmallText} from './home_page';
 
 export const Home = () => {
     return (
@@ -12,10 +12,15 @@ export const Home = () => {
         }}
         >
             <HomeText>
-                Eat, Sleep, Workout,{"\n"} <strong>Rest</strong>, Repeat
                 <div>
-                    Your ideal workout plan, stress-free.
+                    Eat, Sleep, Workout,<br />
                 </div>
+                <div>
+                    <strong> Rest</strong>, Repeat
+                </div>
+                <SmallText>
+                    Your ideal workout plan, stress-free.
+                </SmallText>
             </HomeText>
             <NavBtn>
                     <NavBtnLinkd to="/signin">Plan Now</NavBtnLinkd>

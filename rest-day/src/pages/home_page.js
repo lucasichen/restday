@@ -4,7 +4,6 @@ import { NavLink as Link } from 'react-router-dom'
 export const HomeText = styled.div`
   color: white;
   font-size: 50px;
-  align-items: center;
   margin: 50px;
 `;
 
@@ -40,3 +39,7 @@ export const NavBtnLinkd = styled(Link)`
     color: #010606;
   }
 `;
+export const SmallText = styled.div `
+  color: #666666;
+  font-size: 20px;
+`
