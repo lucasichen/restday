@@ -7,18 +7,52 @@
 // .then(response => response.json())
 // .then(json => console.log(json));
 // console.log(json)
+class Get {
+    constructor(access_token,userId) {
+        this.access_token = access_token;
+        this.userId = userId;
+    }
+    today(){
+        var present = new Date();
+        var today = present.getFullYear() + '-' + present.getMonth() + '-' + present.getDate();
+        return today;
+    }
+    last_week(){
+        var last_week = new Date();
+        var last = last_week.getFullYear() + '-' + last_week.getMonth() + '-' + last_week.getDate()-7;
+        return last;
+    }
+    sleep_log(){
+        let sleep = 'https://api.fitbit.com/1/user/' + this.access_token + '/sleep/list.json';
+        return sleep; 
+    }
 
+    heart_rate_log(start_date,end_date) {
+        let heart_rate = 'https://api.fitbit.com/1/user/' + this.access_token + 'activities/heart/date/' + start_date + '/' + end_date + '.json';
+        return heart_rate;
+    }
+
+    activity_log(start_date,end_date) {
+        let activity = 'https://api.fitbit.com/1/user/' + this.access_token + '/activities/list.json?afterDate=' + start_date + '&beforeDate=' + end_date; 
+        return activity;
+    }
+}
 // get the url 
 var url = window.location.href;
+
 //getting the access token from url 
 var access_token = url.split("#")[1].split("=")[1].split("&")[0]; 
+
 // get the userid 
 var userId = url.split("#")[1].split("=")[2].split("&")[0]; 
+
 console.log(access_token); 
 console.log(userId);
 
+let get = new Get(access_token,userId);
+
 var xhr = new XMLHttpRequest();
-xhr.open('GET', 'https://api.fitbit.com/1/user/' + userId + '/activities/heart/date/today/1w.json');
+xhr.open('GET', get.sleep_log);
 xhr.setRequestHeader("Authorization", 'Bearer ' + access_token);
 xhr.onload = function () {
     if (xhr.status === 200) {
