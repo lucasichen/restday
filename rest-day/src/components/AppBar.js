@@ -12,7 +12,7 @@ const AppBar = () => {
         <>
             <Nav>
                 <NavLink to="/">
-                    <h1>RestDay</h1>
+                    <h1>REST DAY</h1>
                 </NavLink>
                 <Bars />
                 <NavMenu>

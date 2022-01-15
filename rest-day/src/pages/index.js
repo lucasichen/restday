@@ -1,5 +1,5 @@
 import React from 'react'
-import {NavBtn,NavBtnLinkd,HomeText,SmallText} from './home_page';
+import {HomeBtn,NavBtnLinkd,HomeText,SmallText} from './home_page';
 
 export const Home = () => {
     return (
@@ -22,9 +22,9 @@ export const Home = () => {
                     Your ideal workout plan, stress-free.
                 </SmallText>
             </HomeText>
-            <NavBtn>
+            <HomeBtn>
                     <NavBtnLinkd to="/signin">Plan Now</NavBtnLinkd>
-            </NavBtn>
+            </HomeBtn>
             
         </div>
     )

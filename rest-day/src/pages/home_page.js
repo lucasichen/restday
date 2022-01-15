@@ -7,7 +7,7 @@ export const HomeText = styled.div`
   margin: 50px;
 `;
 
-export const NavBtn = styled.nav`
+export const HomeBtn = styled.nav`
   display: flex;
   align-items: center;
   margin-right: 24px;
