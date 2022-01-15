@@ -1,27 +1,34 @@
 import { useState } from "react";
+import WorkoutDay from "./WorkoutDay";
 
 import "./WorkoutSchedule.css";
 
 const WorkoutSchedule = () => {
-    const defaultSchedule = {
-        Sunday: {
+    const defaultSchedule = [
+        {
+            id: 1,
+            day: "sunday",
             target: {
                 name: "bicep",
-                src: ".../../../assets/Body Icons/bicep.jpg",
+                src: require("../../Assets/Body Icons/Bicep.png"),
             },
             exercises: [],
         },
-        Monday: {
+        {
+            id: 2,
+            day: "monday",
             target: {
                 name: "aerobics",
-                src: "../../Assets/Body Icons/aerobics.png",
+                src: require("../../Assets/Body Icons/Aerobics.png"),
             },
             exercises: [],
         },
-        Tuesday: {
+        {
+            id: 3,
+            day: "tuesday",
             target: {
                 name: "pectorals",
-                src: "../../Assets/Body Icons/Pectorals.png",
+                src: require("../../Assets/Body Icons/Pectorals.png"),
             },
             exercises: [
                 {
@@ -46,39 +53,60 @@ const WorkoutSchedule = () => {
                 },
             ],
         },
-        Wednesday: {
+        {
+            id: 4,
+            day: "wednesday",
             target: {
                 name: "abs",
-                src: "../../Assets/Body Icons/abs.png",
+                src: require("../../Assets/Body Icons/Abs.png"),
             },
             exercises: [],
         },
-        Thursday: {
+        {
+            id: 5,
+            day: "thursday",
             target: {
                 name: "lats",
-                src: "../../Assets/Body Icons/lats.png",
+                src: require("../../Assets/Body Icons/Lats.png"),
             },
             exercises: [],
         },
-        Friday: {
+        {
+            id: 6,
+            day: "friday",
             target: {
                 name: "rest",
-                src: "../../Assets/Body Icons/rest.png",
+                src: require("../../Assets/Body Icons/Rest.png"), 
             },
             exercises: [],
         },
-        Saturday: {
+        {
+            id: 7,
+            day: "saturday",
             target: {
                 name: "quads",
-                src: "../../Assets/Body Icons/quads.png",
+                src: require("../../Assets/Body Icons/Quads.png"),
             },
             exercises: [],
         },
-    };
+    ];
 
     const [schedule, setSchedule] = useState(defaultSchedule);
 
-    return <div className="workout-schedule"></div>;
+    return (
+        <div className="workout-schedule">
+            {schedule.map((day) => {
+                return (
+                    <WorkoutDay
+                        key={day.id}
+                        imgSrc={day.target.src}
+                        targetName={day.target.name}
+                        day={day.day}
+                    />
+                );
+            })}
+        </div>
+    );
 };
 
 export default WorkoutSchedule;

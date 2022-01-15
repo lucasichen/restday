@@ -1,0 +1,54 @@
+.workout-day {
+    border-width: 5px;
+    border-color: yellow;
+    align-content: center;
+    justify-content: center;
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* width: 5em; */
+    padding: 1em 1em 1em 1em;
+}
+
+.body-part-name {
+    color: #9999aa;
+    font-size: 20px;
+    position: relative;
+    top: -15px;
+    text-align: center;
+}
+
+.body-icon {
+    margin-right: 0.5em;
+    width: 125px;
+    height: 125px;
+}
+
+.divider {
+    height: 1px; 
+    width: 150px;
+    background-color: white;
+    border-radius: 99px;
+    position: relative;
+    border: 1px solid white;
+}
+
+.divider-selected{
+    height: 1px;
+    width: 150px;
+    background-color: #DE445D;
+    border-radius: 99px;
+    position: relative;
+    border: 1px solid #DE445D;
+}
+
+.day-of-the-week {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.day-of-the-week-selected {
+    color: #DE445D;
+    font-size: 20px;
+    text-align: center;
+}

@@ -1,10 +1,14 @@
-import './App.css';
-import AppBar from './components/AppBar';
+import "./App.css";
+import AppBar from "./components/AppBar";
+import WorkoutSchedule from "./components/WorkoutSchedule/WorkoutSchedule";
 
 function App() {
-  return (
-    <AppBar />
-  );
+    return (
+        <div className="App">
+            <AppBar />
+            <WorkoutSchedule />
+        </div>
+    );
 }
 
 export default App;
