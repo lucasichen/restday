@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bc8d3ed351e29bf1b9d0b55bd0da2a21",
+    "revision": "06e4747f9a148e98097cf94a4868cfd6",
     "url": "/restday/index.html"
   },
   {
-    "revision": "d860b52b88d2165d1421",
+    "revision": "3da037c7669df95e81f1",
     "url": "/restday/static/css/main.7dba0fb8.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/restday/static/js/2.f49daaeb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d860b52b88d2165d1421",
-    "url": "/restday/static/js/main.6c94abe2.chunk.js"
+    "revision": "3da037c7669df95e81f1",
+    "url": "/restday/static/js/main.733fbc8f.chunk.js"
   },
   {
     "revision": "94ac433b2e045b141716",
