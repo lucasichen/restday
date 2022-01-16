@@ -17,60 +17,24 @@ class Get {
         let last = last_week.getFullYear() + '-' + last_week.getMonth()+1 + '-' + last_date;
         return last;
     }
-    async sleep_log(start_date){
-        let url = 'https://api.fitbit.com/1/user/' + this.userId + '/sleep/list.json?afterDate='+start_date+'&offset=0&limit=07&sort=asc';
-        // fetch(url, {
-        //     method: "GET",
-        //     headers: {"Authorization": "Bearer " + this.access_token}
-        // })
-        // .then(function (response) {
-        //     return response.json;
-        // })
-        // .then(function (obj) {
-        //     console.log(obj);
-        // })
-        // .catch(function (error) {
-        //     console.log("error");
-        // });
-        
-        // let Data = await fetch(url, {
-        //     method: "GET",
-        //     headers: {"Authorization": "Bearer " + this.access_token}
-        // })
-        // .then(response => response.json())
-        // .then(json => {
-        //     // console.log(Data);
-        //     // console.log("Sleep Log: ",json.sleep)
-        // });
-
-        const Data = await fetch(url, {
-            method: "GET",
-            headers: {"Authorization": "Bearer " + this.access_token}
-        });
-        // ;
-
-
-        // console.log(Data.json());
-        return Data;
+    async sleep_log() {
+        try {
+            let url = 'https://api.fitbit.com/1/user/' + this.userId + '/sleep/list.json?afterDate='+get.last_week()+'&offset=0&limit=07&sort=asc';
+            const response = await fetch(url,{method: "GET",headers: {"Authorization": "Bearer " + this.access_token}});
+            const json = await response.json();
+            console.log("Sleep Log:",json.sleep);
+            var sleep_time = [];
+            for(let i = 0; i<7;i++) {
+                sleep_time.push(json.sleep[i].duration);
+            }
+            console.log("To array:",sleep_time);
+            return sleep_time;
+        } catch (error) {
+            console.error(error);
+        }finally{
+            this.setState({ isLoading: false });
+        }
     }
-    
-    // async sleep_log1(start_date) {
-    //     var Data;
-    //     var xhr = new XMLHttpRequest();
-    //     xhr.open('GET', 'https://api.fitbit.com/1/user/' + this.userId + '/sleep/list.json?afterDate='+start_date+'&offset=0&limit=07&sort=asc');
-    //     xhr.setRequestHeader("Authorization", 'Bearer ' + this.access_token);
-    //     xhr.send();
-    //     xhr.onload = await function () {
-    //         if (xhr.readyState == 4 && (xhr.status == 200)) {
-    //             // console.log("ready to send sleep log");
-    //             Data = JSON.parse(xhr.responseText).sleep[0].duration;
-    //         }
-    //         console.log("called");
-    //         return 1;
-    //     };
-        
-    //     return await Data;
-    // }
     // Need more permissons
     heart_rate_log(start_date) {
         let heart_rate = 'https://api.fitbit.com/1/user/' + this.userId + '/activities/heart/date/' + start_date + '/today.json';
