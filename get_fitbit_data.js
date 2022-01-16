@@ -90,28 +90,6 @@ class Send {
         .then(json => console.log(json));
     }
 }
-// get the url 
-// var url = window.location.href;
-
-// //getting the access token from url 
-// var access_token = url.split("#")[1].split("=")[1].split("&")[0]; 
-
-// // get the userid 
-// var userId = url.split("#")[1].split("=")[2].split("&")[0]; 
-
-// console.log(access_token); 
-// console.log(userId);
-
-
-// var xhr = new XMLHttpRequest();
-// xhr.open('GET', 'https://api.fitbit.com/1/user/-/sleep/list.json');
-// xhr.setRequestHeader("Authorization", 'Bearer ' + access_token);
-// xhr.onload = function () {
-//     if (xhr.status === 200) {
-//         console.log(xhr.responseText)
-//     }
-// };
-// xhr.send()
 
 // ----- Testing Area -----
 let access_token = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMzdZSzMiLCJzdWIiOiI5VFA5QjIiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3dlaSB3c29jIHdhY3Qgd3NldCIsImV4cCI6MTY0Mjg5NjM4MCwiaWF0IjoxNjQyMjkxNTgwfQ._ylZArEnIHuocOXKtSz5w1wXWBr03odFknWIxgkub9Y';
@@ -120,7 +98,6 @@ let get = new Get(access_token,user_id);
 let send = new Send(access_token,user_id);
 
 get.sleep_log();
-// console.log(data);
 get.activity_log();
 // get.heart_rate_log(get.last_week());
 // get.recent_activities();
