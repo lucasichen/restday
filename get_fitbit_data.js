@@ -17,8 +17,17 @@ class Get {
         let last = last_week.getFullYear() + '-' + last_week.getMonth()+1 + '-' + last_date;
         return last;
     }
-    async sleep_log(start_date){
+    sleep_log(start_date) {
         let url = 'https://api.fitbit.com/1/user/' + this.userId + '/sleep/list.json?afterDate='+start_date+'&offset=0&limit=07&sort=asc';
+        fetch(url, {
+            method: "GET",
+            headers: {"Authorization": "Bearer " + this.access_token}
+        })
+        .then(response => response.json())
+        .then(json => console.log("sleep: ",json));
+    }
+    // async sleep_log(start_date){
+    //     let url = 'https://api.fitbit.com/1/user/' + this.userId + '/sleep/list.json?afterDate='+start_date+'&offset=0&limit=07&sort=asc';
         // fetch(url, {
         //     method: "GET",
         //     headers: {"Authorization": "Bearer " + this.access_token}
@@ -43,16 +52,16 @@ class Get {
         //     // console.log("Sleep Log: ",json.sleep)
         // });
 
-        const Data = await fetch(url, {
-            method: "GET",
-            headers: {"Authorization": "Bearer " + this.access_token}
-        });
+        // const Data = await fetch(url, {
+        //     method: "GET",
+        //     headers: {"Authorization": "Bearer " + this.access_token}
+        // });
         // ;
 
 
         // console.log(Data.json());
-        return Data;
-    }
+        // return Data;
+    // }
     
     // async sleep_log1(start_date) {
     //     var Data;
@@ -146,16 +155,16 @@ let user_id = '9TP9B2';
 let get = new Get(access_token,user_id);
 let send = new Send(access_token,user_id);
 
-// get.sleep_log(get.last_week());
-let data = get.sleep_log(get.last_week());
-var j;
-data
-.then(response => response.json())
-.then(json => {
-    j = json;
-    console.log(j);
-});
-console.log(j);
+get.sleep_log(get.last_week());
+// let data = get.sleep_log(get.last_week());
+// var j;
+// data
+// .then(response => response.json())
+// .then(json => {
+//     j = json;
+//     console.log(j);
+// });
+// console.log(j);
 
 // console.log(data);
 // get.activity_log(get.last_week());
