@@ -7,6 +7,7 @@ import {
     NavBtn,
     NavBtnLink
   } from './NavBarElements';
+import React from 'react';
 const AppBar = () => {
     return (
         <>

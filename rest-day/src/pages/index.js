@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {HomeBtn,NavBtnLinkd,HomeText,SmallText} from './home_page';
 
 export const Home = () => {
