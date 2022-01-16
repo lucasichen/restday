@@ -97,23 +97,27 @@ const WorkoutSchedule = () => {
         <div
             className="workout-schedule"
             style={{
-                display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
+                display: "flex",
                 height: "90vh",
                 backgroundColor: "#191922",
+                flexDirection: "column",
             }}
         >
-            {schedule.map((day) => {
-                return (
-                    <WorkoutDay
-                        key={day.id}
-                        imgSrc={day.target.src}
-                        targetName={day.target.name}
-                        day={day.day}
-                    />
-                );
-            })}
+            <div className="days">
+                {schedule.map((day) => {
+                    return (
+                        <WorkoutDay
+                            key={day.id}
+                            imgSrc={day.target.src}
+                            targetName={day.target.name}
+                            day={day.day}
+                        />
+                    );
+                })}
+            </div>
+            <div className="start-btn">Start Today's Session</div>
         </div>
     );
 };
