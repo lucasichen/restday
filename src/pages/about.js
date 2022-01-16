@@ -10,7 +10,7 @@ export const About = () => {
             backgroundColor: '#191919'
         }}
         >
-            <div>test</div>
+            <div>About</div>
         </div>
     )
 }
