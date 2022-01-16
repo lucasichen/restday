@@ -1,3 +1,4 @@
+
 import logo from './logo.svg';
 import './App.css';
 import AppBar from './components/AppBar';
@@ -20,10 +21,13 @@ function App() {
         <Route path="/account" element={<Account />} />
         <Route path="/about" element={<About />} />
         <Route path="/signin" element={<SignIn />} />
+        <Route path="/workout-schedule">
+                <WorkoutSchedule />
+        </Route>
       </Routes>
     </Router>
     
   );
-}
+
 
 export default App;
