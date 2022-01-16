@@ -1,37 +1,36 @@
-import './AppBar.css';
+import "./AppBar.css";
 import {
     Nav,
     NavLink,
     Bars,
     NavMenu,
     NavBtn,
-    NavBtnLink
-  } from './NavBarElements';
+    NavBtnLink,
+} from "./NavBarElements";
+
 const AppBar = () => {
     return (
-        <>
-            <Nav>
-                <NavLink to="/">
-                    <h1>REST DAY</h1>
+        <Nav className="nav-bar">
+            <NavLink to="/">
+                <h1>REST DAY</h1>
+            </NavLink>
+            <Bars />
+            <NavMenu>
+                <NavLink to="/trends" activeStyle>
+                    Trends
                 </NavLink>
-                <Bars />
-                <NavMenu>
-                    <NavLink to="/trends" activeStyle>
-                        Trends
-                    </NavLink>
-                    <NavLink to="/account" activeStyle>
-                        Account
-                    </NavLink>
-                    <NavLink to="/about" activeStyle>
-                        About
-                    </NavLink>
-                </NavMenu>
-                <NavBtn>
-                    <NavBtnLink to="/signin">Log Health</NavBtnLink>
-                </NavBtn>
-            </Nav>
-        </>
+                <NavLink to="/account" activeStyle>
+                    Account
+                </NavLink>
+                <NavLink to="/about" activeStyle>
+                    About
+                </NavLink>
+            </NavMenu>
+            <NavBtn>
+                <NavBtnLink to="/signin">Log Health</NavBtnLink>
+            </NavBtn>
+        </Nav>
     );
-}
+};
 
 export default AppBar;
