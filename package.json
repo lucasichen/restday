@@ -2,7 +2,7 @@
   "homepage": "https://lucasichen.github.io/restday",
   "name": "rest-day",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
