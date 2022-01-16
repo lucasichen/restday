@@ -1,15 +1,13 @@
 import "./App.css";
 import AppBar from "./components/AppBar";
 import { Route } from "react-router-dom";
-import WorkoutSchedule from "./components/Workout Schedule/WorkoutSchedule";
+import Trends from "./components/Trends/Trends";
 
 function App() {
     return (
-        <div>
+        <div className="App">
             <AppBar />
-            <Route path="/workout-schedule">
-                <WorkoutSchedule />
-            </Route>
+            <Trends />
         </div>
     );
 }
