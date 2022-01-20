@@ -30,12 +30,19 @@ What things you need to install the software and how to install them
 `npm install react-router-dom`
 `styled-components`
 `react-icons`
+### Installing
+A step by step series of examples that tell you how to get a development env running
+`cd rest-day`
+`npm start`
+
+### Built With
+* [React](https://reactjs.org/docs/getting-started.html) - The web framework used
+* [Node.js](https://nodejs.org/en/docs/) - Backend
+* [FitBit API](https://dev.fitbit.com/build/reference/web-api/) - Used to get data such as hours of sleep and activity
+* [ExerciseDB API](https://www.programmableweb.com/api/exercisedb-rest-api-v10) - Used to get gif images of exercises
 
 ### Authors and acknowledgment
-[Lucas](https://www.github/lucasichen) <br>
-[Willie](https://github.com/PaisWillie)
+* **[Lucas](https://www.github/lucasichen) <br>
+* **[Willie](https://github.com/PaisWillie) <br>
 
 
-## To run the project (in development mode):
-### `cd rest-day`
-### `npm start`
