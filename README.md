@@ -19,11 +19,14 @@ References
 [Exercise for Mental Health](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1470658/)
 </details>
 
-## Install these libraries before running:
-### `npm install`
-### `npm install react-router-dom`
-### `styled-components`
-### `react-icons`
+### Authors and acknowledgment
+[Lucas](https://www.github/lucasichen)
+[Willie](https://github.com/PaisWillie)
+### Install these libraries before running:
+`npm install`
+`npm install react-router-dom`
+`styled-components`
+`react-icons`
 
 ## To run the project (in development mode):
 ### `cd rest-day`
