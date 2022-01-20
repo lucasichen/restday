@@ -4,7 +4,7 @@ Welcome to Rest Day, where we’ll give you your ideal workout plan, stress-free
 ![Images](https://media.giphy.com/media/7M6aCNT9OUAxt1ydUx/giphy.gif)
 
 
-Install these libraries first using:
+## Install these libraries to run:
 ### `npm install`
 ### `npm install react-router-dom`
 ### `styled-components`
