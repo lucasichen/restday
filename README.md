@@ -41,8 +41,8 @@ A step by step series of examples that tell you how to get a development env run
 * [FitBit API](https://dev.fitbit.com/build/reference/web-api/) - Used to get data such as hours of sleep and activity
 * [ExerciseDB API](https://www.programmableweb.com/api/exercisedb-rest-api-v10) - Used to get gif images of exercises
 
-### Authors and acknowledgment
-* **[Lucas](https://www.github/lucasichen) <br>
-* **[Willie](https://github.com/PaisWillie) <br>
+### Authors
+* [Lucas Chen](https://www.github/lucasichen) <br>
+* [Willie Pai](https://github.com/PaisWillie) <br>
 
 
