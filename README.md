@@ -14,8 +14,9 @@ As restrictions get lifted, people are starting to exercise more, however, many 
 
 This project targets both physical and mental health challenges that have occurred in people's lives due to the pandemic. Our goal is to help young adults keep track of their physical and mental health because not only does exercising, with the right amount of rest, help people lose weight and lower the risk of some diseases, it also alleviates the impact of mental stressors such as low self-esteem and social withdrawal. <br>
 
+References
 [implication of covid-19 for mental health](https://www.kff.org/coronavirus-covid-19/issue-brief/the-implications-of-covid-19-for-mental-health-and-substance-use/)
--Exercise for Mental Health
+[Exercise for Mental Health](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1470658/)
 </details>
 
 ## Install these libraries before running:
