@@ -19,14 +19,22 @@ References
 [Exercise for Mental Health](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1470658/)
 </details>
 
-### Authors and acknowledgment
-[Lucas](https://www.github/lucasichen)
-[Willie](https://github.com/PaisWillie)
-### Install these libraries before running:
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+### Prerequisites
+
+What things you need to install the software and how to install them
 `npm install`
 `npm install react-router-dom`
 `styled-components`
 `react-icons`
+
+### Authors and acknowledgment
+[Lucas](https://www.github/lucasichen) <br>
+[Willie](https://github.com/PaisWillie)
+
 
 ## To run the project (in development mode):
 ### `cd rest-day`
