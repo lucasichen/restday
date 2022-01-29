@@ -28,8 +28,8 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 `npm install`
 `npm install react-router-dom`
-`styled-components`
-`react-icons`
+`npm install styled-components`
+`npm install react-icons`
 ### Installing
 A step by step series of examples that tell you how to get a development env running
 `cd rest-day`
