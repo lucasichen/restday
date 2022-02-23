@@ -1,5 +1,5 @@
 # Rest Day
-Welcome to Rest Day, where we’ll give you your ideal workout plan, stress-free. This web application was created using React.js, Node.js, and utilizing two APIs. It was designed in a precise way, with a minimalistic and user-friendly interface, which can be ported into a mobile application in the future using React Native.
+Welcome to Rest Day, where we’ll give you your ideal workout plan, stress-free. This web application was created using React.js, and utilizing two APIs. It was designed in a precise way, with a minimalistic and user-friendly interface, which can be ported into a mobile application in the future using React Native.
 
 ![Images](https://media.giphy.com/media/7M6aCNT9OUAxt1ydUx/giphy.gif)
 
